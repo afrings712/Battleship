@@ -148,6 +148,12 @@ public class Battleship {
       //Initialize board
       char[][] sea = new char[10][10];
 
+      for(int i = 0; i < sea.length; i++) {
+          for (int j = 0; j < sea.length; j++) {
+              sea[i][j] = ' ';
+          }
+      }
+
       //Print initial board state, empty
       printBoard(sea);
 
